@@ -1,6 +1,4 @@
 
-
-
 import 'package:flutter/material.dart';
 
 class MesengerScreen extends StatelessWidget {
@@ -63,727 +61,27 @@ class MesengerScreen extends StatelessWidget {
                 Text('search'),]),
               ),
               SizedBox(height: 20,),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    Container(
-                      width: 60,
-                      child: Column(
+              Container(
+                height: 100,
+                child: ListView.separated(
+                  shrinkWrap: true,
+                  scrollDirection: Axis.horizontal,
 
-                        children: [
-                          Stack(alignment: AlignmentDirectional.bottomEnd,
-                            children: [
-                              CircleAvatar(
-                                backgroundImage: AssetImage("images/merro.jpg"),
-                                radius: 30,
-                              ),
+                    itemBuilder: (context,index)=>buildstory(),
+                  separatorBuilder: (context,index)=>SizedBox(width: 20,),
+                  itemCount: 5,
 
-                              Padding(
-                                padding: const EdgeInsetsDirectional.only(
-                                  bottom: 3,
-                                  end: 3,
-                                ),
-                                child: CircleAvatar(
-                                  backgroundColor: Colors.green,
-                                  radius: 7,
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(height: 6,),
-                          Text('HadeerMedhat',maxLines: 2,overflow: TextOverflow.ellipsis,),
-
-
-                        ],
-                      ),
-                    ),
-                    SizedBox(width: 20,),
-                    Container(
-                      width: 60,
-                      child: Column(
-
-                        children: [
-                          Stack(alignment: AlignmentDirectional.bottomEnd,
-                            children: [
-                              CircleAvatar(
-                                backgroundImage: AssetImage("images/merro.jpg"),
-                                radius: 30,
-                              ),
-
-                              Padding(
-                                padding: const EdgeInsetsDirectional.only(
-                                  bottom: 3,
-                                  end: 3,
-                                ),
-                                child: CircleAvatar(
-                                  backgroundColor: Colors.green,
-                                  radius: 7,
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(height: 6,),
-                          Text('HadeerMedhat',maxLines: 2,overflow: TextOverflow.ellipsis,),
-
-
-                        ],
-                      ),
-                    ),
-                    SizedBox(width: 20,),
-                    Container(
-                      width: 60,
-                      child: Column(
-
-                        children: [
-                          Stack(alignment: AlignmentDirectional.bottomEnd,
-                            children: [
-                              CircleAvatar(
-                                backgroundImage: AssetImage("images/merro.jpg"),
-                                radius: 30,
-                              ),
-
-                              Padding(
-                                padding: const EdgeInsetsDirectional.only(
-                                  bottom: 3,
-                                  end: 3,
-                                ),
-                                child: CircleAvatar(
-                                  backgroundColor: Colors.green,
-                                  radius: 7,
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(height: 6,),
-                          Text('HadeerMedhat',maxLines: 2,overflow: TextOverflow.ellipsis,),
-
-
-                        ],
-                      ),
-                    ),
-                    SizedBox(width: 20,),
-                    Container(
-                      width: 60,
-                      child: Column(
-
-                        children: [
-                          Stack(alignment: AlignmentDirectional.bottomEnd,
-                            children: [
-                              CircleAvatar(
-                                backgroundImage: AssetImage("images/merro.jpg"),
-                                radius: 30,
-                              ),
-
-                              Padding(
-                                padding: const EdgeInsetsDirectional.only(
-                                  bottom: 3,
-                                  end: 3,
-                                ),
-                                child: CircleAvatar(
-                                  backgroundColor: Colors.green,
-                                  radius: 7,
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(height: 6,),
-                          Text('HadeerMedhat',maxLines: 2,overflow: TextOverflow.ellipsis,),
-
-
-                        ],
-                      ),
-                    ),
-                    SizedBox(width: 20,),
-                    Container(
-                      width: 60,
-                      child: Column(
-
-                        children: [
-                          Stack(alignment: AlignmentDirectional.bottomEnd,
-                            children: [
-                              CircleAvatar(
-                                backgroundImage: AssetImage("images/merro.jpg"),
-                                radius: 30,
-                              ),
-
-                              Padding(
-                                padding: const EdgeInsetsDirectional.only(
-                                  bottom: 3,
-                                  end: 3,
-                                ),
-                                child: CircleAvatar(
-                                  backgroundColor: Colors.green,
-                                  radius: 7,
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(height: 6,),
-                          Text('HadeerMedhat',maxLines: 2,overflow: TextOverflow.ellipsis,),
-
-
-                        ],
-                      ),
-                    ),
-                    SizedBox(width: 20,),
-                    Container(
-                      width: 60,
-                      child: Column(
-
-                        children: [
-                          Stack(alignment: AlignmentDirectional.bottomEnd,
-                            children: [
-                              CircleAvatar(
-                                backgroundImage: AssetImage("images/merro.jpg"),
-                                radius: 30,
-                              ),
-
-                              Padding(
-                                padding: const EdgeInsetsDirectional.only(
-                                  bottom: 3,
-                                  end: 3,
-                                ),
-                                child: CircleAvatar(
-                                  backgroundColor: Colors.green,
-                                  radius: 7,
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(height: 6,),
-                          Text('HadeerMedhat',maxLines: 2,overflow: TextOverflow.ellipsis,),
-
-
-                        ],
-                      ),
-                    ),
-                    SizedBox(width: 20,),
-                    Container(
-                      width: 60,
-                      child: Column(
-
-                        children: [
-                          Stack(alignment: AlignmentDirectional.bottomEnd,
-                            children: [
-                              CircleAvatar(
-                                backgroundImage: AssetImage("images/merro.jpg"),
-                                radius: 30,
-                              ),
-
-                              Padding(
-                                padding: const EdgeInsetsDirectional.only(
-                                  bottom: 3,
-                                  end: 3,
-                                ),
-                                child: CircleAvatar(
-                                  backgroundColor: Colors.green,
-                                  radius: 7,
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(height: 6,),
-                          Text('HadeerMedhat',maxLines: 2,overflow: TextOverflow.ellipsis,),
-
-
-                        ],
-                      ),
-                    ),
-                  ],
                 ),
               ),
-              SizedBox(height: 30,),
-
-              Row(
-                children: [
-                  Stack(alignment: AlignmentDirectional.bottomEnd,
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage("images/merro.jpg"),
-                        radius: 30,
-                      ),
-
-                      Padding(
-                        padding: const EdgeInsetsDirectional.only(
-                          bottom: 3,
-                          end: 3,
-                        ),
-                        child: CircleAvatar(
-                          backgroundColor: Colors.green,
-                          radius: 7,
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 20,),
-                  Expanded(
-                    child: Column(
-
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('hadeer Medhat'),
-                         Row(
-
-                          children: [
-                            Expanded(child: Text('i already told you be carefull',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),
-                              maxLines: 1,overflow: TextOverflow.ellipsis,)),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 10),
-                              child: Container(
-                                height: 5,width: 5,
-                                decoration: BoxDecoration(shape: BoxShape.circle,
-                                    color:Colors.green ),),
-                            ),
-                            Text('2:00 pm'),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
               SizedBox(height: 20,),
-              Row(
-                children: [
-                  Stack(alignment: AlignmentDirectional.bottomEnd,
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage("images/merro.jpg"),
-                        radius: 30,
-                      ),
+            ListView.separated(
+              physics:  NeverScrollableScrollPhysics(),
+              shrinkWrap: true,
+                itemBuilder: (context,index)=>buildchatItem(),
+                separatorBuilder: (context,index)=> SizedBox(height: 15,),
+                itemCount: 12,)
 
-                      Padding(
-                        padding: const EdgeInsetsDirectional.only(
-                          bottom: 3,
-                          end: 3,
-                        ),
-                        child: CircleAvatar(
-                          backgroundColor: Colors.green,
-                          radius: 7,
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 20,),
-                  Expanded(
-                    child: Column(
 
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('hadeer Medhat'),
-                        Row(
-
-                          children: [
-                            Expanded(child: Text('i already told you be carefull',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),
-                              maxLines: 1,overflow: TextOverflow.ellipsis,)),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 10),
-                              child: Container(
-                                height: 5,width: 5,
-                                decoration: BoxDecoration(shape: BoxShape.circle,
-                                    color:Colors.green ),),
-                            ),
-                            Text('2:00 pm'),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 20,),
-              Row(
-                children: [
-                  Stack(alignment: AlignmentDirectional.bottomEnd,
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage("images/merro.jpg"),
-                        radius: 30,
-                      ),
-
-                      Padding(
-                        padding: const EdgeInsetsDirectional.only(
-                          bottom: 3,
-                          end: 3,
-                        ),
-                        child: CircleAvatar(
-                          backgroundColor: Colors.green,
-                          radius: 7,
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 20,),
-                  Expanded(
-                    child: Column(
-
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('hadeer Medhat'),
-                        Row(
-
-                          children: [
-                            Expanded(child: Text('i already told you be carefull',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),
-                              maxLines: 1,overflow: TextOverflow.ellipsis,)),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 10),
-                              child: Container(
-                                height: 5,width: 5,
-                                decoration: BoxDecoration(shape: BoxShape.circle,
-                                    color:Colors.green ),),
-                            ),
-                            Text('2:00 pm'),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 20,),
-              Row(
-                children: [
-                  Stack(alignment: AlignmentDirectional.bottomEnd,
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage("images/merro.jpg"),
-                        radius: 30,
-                      ),
-
-                      Padding(
-                        padding: const EdgeInsetsDirectional.only(
-                          bottom: 3,
-                          end: 3,
-                        ),
-                        child: CircleAvatar(
-                          backgroundColor: Colors.green,
-                          radius: 7,
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 20,),
-                  Expanded(
-                    child: Column(
-
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('hadeer Medhat'),
-                        Row(
-
-                          children: [
-                            Expanded(child: Text('i already told you be carefull',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),
-                              maxLines: 1,overflow: TextOverflow.ellipsis,)),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 10),
-                              child: Container(
-                                height: 5,width: 5,
-                                decoration: BoxDecoration(shape: BoxShape.circle,
-                                    color:Colors.green ),),
-                            ),
-                            Text('2:00 pm'),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 20,),
-              Row(
-                children: [
-                  Stack(alignment: AlignmentDirectional.bottomEnd,
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage("images/merro.jpg"),
-                        radius: 30,
-                      ),
-
-                      Padding(
-                        padding: const EdgeInsetsDirectional.only(
-                          bottom: 3,
-                          end: 3,
-                        ),
-                        child: CircleAvatar(
-                          backgroundColor: Colors.green,
-                          radius: 7,
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 20,),
-                  Expanded(
-                    child: Column(
-
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('hadeer Medhat'),
-                        Row(
-
-                          children: [
-                            Expanded(child: Text('i already told you be carefull',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),
-                              maxLines: 1,overflow: TextOverflow.ellipsis,)),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 10),
-                              child: Container(
-                                height: 5,width: 5,
-                                decoration: BoxDecoration(shape: BoxShape.circle,
-                                    color:Colors.green ),),
-                            ),
-                            Text('2:00 pm'),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 20,),
-              Row(
-                children: [
-                  Stack(alignment: AlignmentDirectional.bottomEnd,
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage("images/merro.jpg"),
-                        radius: 30,
-                      ),
-
-                      Padding(
-                        padding: const EdgeInsetsDirectional.only(
-                          bottom: 3,
-                          end: 3,
-                        ),
-                        child: CircleAvatar(
-                          backgroundColor: Colors.green,
-                          radius: 7,
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 20,),
-                  Expanded(
-                    child: Column(
-
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('hadeer Medhat'),
-                        Row(
-
-                          children: [
-                            Expanded(child: Text('i already told you be carefull',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),
-                              maxLines: 1,overflow: TextOverflow.ellipsis,)),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 10),
-                              child: Container(
-                                height: 5,width: 5,
-                                decoration: BoxDecoration(shape: BoxShape.circle,
-                                    color:Colors.green ),),
-                            ),
-                            Text('2:00 pm'),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 20,),
-              Row(
-                children: [
-                  Stack(alignment: AlignmentDirectional.bottomEnd,
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage("images/merro.jpg"),
-                        radius: 30,
-                      ),
-
-                      Padding(
-                        padding: const EdgeInsetsDirectional.only(
-                          bottom: 3,
-                          end: 3,
-                        ),
-                        child: CircleAvatar(
-                          backgroundColor: Colors.green,
-                          radius: 7,
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 20,),
-                  Expanded(
-                    child: Column(
-
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('hadeer Medhat'),
-                        Row(
-
-                          children: [
-                            Expanded(child: Text('i already told you be carefull',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),
-                              maxLines: 1,overflow: TextOverflow.ellipsis,)),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 10),
-                              child: Container(
-                                height: 5,width: 5,
-                                decoration: BoxDecoration(shape: BoxShape.circle,
-                                    color:Colors.green ),),
-                            ),
-                            Text('2:00 pm'),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 20,),   Row(
-                children: [
-                  Stack(alignment: AlignmentDirectional.bottomEnd,
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage("images/merro.jpg"),
-                        radius: 30,
-                      ),
-
-                      Padding(
-                        padding: const EdgeInsetsDirectional.only(
-                          bottom: 3,
-                          end: 3,
-                        ),
-                        child: CircleAvatar(
-                          backgroundColor: Colors.green,
-                          radius: 7,
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 20,),
-                  Expanded(
-                    child: Column(
-
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('hadeer Medhat'),
-                        Row(
-
-                          children: [
-                            Expanded(child: Text('i already told you be carefull',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),
-                              maxLines: 1,overflow: TextOverflow.ellipsis,)),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 10),
-                              child: Container(
-                                height: 5,width: 5,
-                                decoration: BoxDecoration(shape: BoxShape.circle,
-                                    color:Colors.green ),),
-                            ),
-                            Text('2:00 pm'),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 20,),
-              Row(
-                children: [
-                  Stack(alignment: AlignmentDirectional.bottomEnd,
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage("images/merro.jpg"),
-                        radius: 30,
-                      ),
-
-                      Padding(
-                        padding: const EdgeInsetsDirectional.only(
-                          bottom: 3,
-                          end: 3,
-                        ),
-                        child: CircleAvatar(
-                          backgroundColor: Colors.green,
-                          radius: 7,
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 20,),
-                  Expanded(
-                    child: Column(
-
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('hadeer Medhat'),
-                        Row(
-
-                          children: [
-                            Expanded(child: Text('i already told you be carefull',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),
-                              maxLines: 1,overflow: TextOverflow.ellipsis,)),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 10),
-                              child: Container(
-                                height: 5,width: 5,
-                                decoration: BoxDecoration(shape: BoxShape.circle,
-                                    color:Colors.green ),),
-                            ),
-                            Text('2:00 pm'),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 20,),
-              Row(
-                children: [
-                  Stack(alignment: AlignmentDirectional.bottomEnd,
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage("images/merro.jpg"),
-                        radius: 30,
-                      ),
-
-                      Padding(
-                        padding: const EdgeInsetsDirectional.only(
-                          bottom: 3,
-                          end: 3,
-                        ),
-                        child: CircleAvatar(
-                          backgroundColor: Colors.green,
-                          radius: 7,
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 20,),
-                  Expanded(
-                    child: Column(
-
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('hadeer Medhat'),
-                        Row(
-
-                          children: [
-                            Expanded(child: Text('i already told you be carefull',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),
-                              maxLines: 1,overflow: TextOverflow.ellipsis,)),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 10),
-                              child: Container(
-                                height: 5,width: 5,
-                                decoration: BoxDecoration(shape: BoxShape.circle,
-                                    color:Colors.green ),),
-                            ),
-                            Text('2:00 pm'),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              
 
             ],
           ),
@@ -791,4 +89,86 @@ class MesengerScreen extends StatelessWidget {
       ),
     );
   }
+  //1-build item
+ //2-build list
+//3-add item to list
 }
+Widget buildchatItem()=> Row(
+  children: [
+    Stack(alignment: AlignmentDirectional.bottomEnd,
+      children: [
+        CircleAvatar(
+          backgroundImage: AssetImage("images/merro.jpg"),
+          radius: 30,
+        ),
+
+        Padding(
+          padding: const EdgeInsetsDirectional.only(
+            bottom: 3,
+            end: 3,
+          ),
+          child: CircleAvatar(
+            backgroundColor: Colors.green,
+            radius: 7,
+          ),
+        ),
+      ],
+    ),
+    SizedBox(width: 20,),
+    Expanded(
+      child: Column(
+
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('hadeer Medhat'),
+          Row(
+
+            children: [
+              Expanded(child: Text('i already told you be carefull',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),
+                maxLines: 1,overflow: TextOverflow.ellipsis,)),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10),
+                child: Container(
+                  height: 5,width: 5,
+                  decoration: BoxDecoration(shape: BoxShape.circle,
+                      color:Colors.green ),),
+              ),
+              Text('2:00 pm'),
+            ],
+          ),
+        ],
+      ),
+    ),
+  ],
+);
+Widget buildstory()=>  Container(
+  width: 60,
+  child: Column(
+
+    children: [
+      Stack(alignment: AlignmentDirectional.bottomEnd,
+        children: [
+          CircleAvatar(
+            backgroundImage: AssetImage("images/merro.jpg"),
+            radius: 30,
+          ),
+
+          Padding(
+            padding: const EdgeInsetsDirectional.only(
+              bottom: 3,
+              end: 3,
+            ),
+            child: CircleAvatar(
+              backgroundColor: Colors.green,
+              radius: 7,
+            ),
+          ),
+        ],
+      ),
+      SizedBox(height: 6,),
+      Text('HadeerMedhat',maxLines: 2,overflow: TextOverflow.ellipsis,),
+
+
+    ],
+  ),
+);
